@@ -6,7 +6,8 @@ export default {
       colors: {
         brightColor: "#AB6B2E",
         backgroundColor: "#FDE9CC",
-        merino: "#F3EFDC"
+        merino: "#F3EFDC",
+        black:'#000000',
       },
     },
   },

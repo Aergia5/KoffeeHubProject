@@ -3,23 +3,22 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Menu from "./components/Menu";
 import About from "./components/About";
-// import Product from "./components/Product";
-// import Review from "./components/Review";
 import Footer from "./components/Footer";
 
 const App = () => {
-  const[loginPage,setLoginPage]=useState(false);
-  function handleOpenLogin(){
-    setLoginPage(!loginPage)
-    console.log("ckucjed")
-  }
+  const [loginPage, setLoginPage] = useState(false);
+
+  const handleOpenLogin = () => {
+    setLoginPage(!loginPage);
+  };
+
   return (
     <div>
-      <Navbar handleOpenLogin={handleOpenLogin}/>
+      <Navbar handleOpenLogin={handleOpenLogin} />
 
       <main>
         <div id="home">
-        <Home handleOpenLogin={handleOpenLogin} loginPage={loginPage}/>
+          <Home handleOpenLogin={handleOpenLogin} loginPage={loginPage} />
         </div>
 
         <div id="menu">
@@ -29,14 +28,6 @@ const App = () => {
         <div id="about">
           <About />
         </div>
-{/* 
-        <div id="products">
-          <Product />
-        </div> */}
-
-        {/* <div id="review">
-          <Review />
-        </div> */}
       </main>
 
       <Footer />
