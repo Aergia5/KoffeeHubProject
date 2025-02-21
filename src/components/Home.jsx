@@ -18,7 +18,6 @@ const Home = ({loginPage}) => {
 
         <div className=" flex flex-row gap-6">
           <Button title="ORDER" />
-          <Button title="MORE MENU" />
         </div>
       </div>
 
